@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+.main{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.main h1{
+    font-size: 3em;
+}
+
+body{
+    /* background: linear-gradient(to left, rgba(23, 23, 241, 0.508), white); */
+
+    background: linear-gradient(to right, #42275a,#734b6d);
+
+    /* #42275a → #734b6d */
+}
+
+h1{
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    font-weight: 200;
+}
+
+h2{
+    font-family: 'Tenor Sans', sans-serif;
+    color: white;
+    font-weight: 200;
+    ;}
+
+/* .firstHalf{
+    /* background-color: aqua; */
+/* } */ 
+
+.secondHalf{
+    /* background-color: blueviolet; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.container{
+    background-color: white;
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.363);
+}
+
+.container h1{
+    color:black
+}
+
+.main h2{
+    font-size: 2em;
+}
+
+.form {
+    /* background-color: brown; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid grey
+}
+
+.button {
+    background-color: black;
+    color:white;
+    transition: all 0.2s ease-in 0s;
+}
+
+.button:hover{
+    background-color: white;
+    color:black
+}
