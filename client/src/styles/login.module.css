@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 .main{
@@ -17,11 +15,7 @@
 }
 
 body{
-    /* background: linear-gradient(to left, rgba(23, 23, 241, 0.508), white); */
-
     background: linear-gradient(to right, #42275a,#734b6d);
-
-    /* #42275a → #734b6d */
 }
 
 h1{
@@ -35,10 +29,6 @@ h2{
     color: white;
     font-weight: 200;
     ;}
-
-/* .firstHalf{
-    /* background-color: aqua; */
-/* } */ 
 
 .secondHalf{
     width: 50%;
@@ -114,4 +104,16 @@ input{
 
 textarea{
     font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-width: 750px) {
+
+    .firstHalf{
+        display: none;
+    }
+
+    .secondHalf{
+        width: 100%;
+        margin-top: 80px;
+    }
 }
