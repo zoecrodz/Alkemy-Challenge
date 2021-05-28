@@ -34,6 +34,16 @@
   background-color: black;
 }
 
+.total{
+  display: block;
+  background-color: white;
+  width: 40%;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.445);
+  padding: 5px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 @media (max-width: 750px) {
   .container {
     flex-direction: column;

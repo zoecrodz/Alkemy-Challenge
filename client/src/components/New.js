@@ -11,6 +11,7 @@ const New = ({ user }) => {
   const [outgoing, setOutgoing] = useState(false);
   const [transaction, setTransaction] = useState({});
   const [message, setMessage] = useState(false);
+  const [message2, setMessage2] = useState(false)
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -34,12 +35,14 @@ const New = ({ user }) => {
       .then(() => history.go(0))
     } else {
       setMessage(true);
+      setMessage2(true)
     }
   };
 
   const handleChange = (e) => {
     e.preventDefault();
     setMessage(false);
+    setMessage2(false)
     setTransaction({ ...transaction, [e.target.name]: e.target.value });
   };
 
@@ -68,7 +71,7 @@ const New = ({ user }) => {
               Extraer
             </button>
           </div>
-          {message && <span>Seleccione el tipo de transacción</span>}
+          {message && <span className={style.message}>Seleccione el tipo de transacción</span>}
           <form onSubmit={handleSubmit}>
             <label for="amount">Monto</label>
             <input onChange={handleChange} name="amount" type="number"></input>
@@ -81,6 +84,9 @@ const New = ({ user }) => {
             <input style={{width: '80px', fontSize:'1em'}}className={style.submit} type="submit"></input>
           </form>
         </>
+      )}
+      {message2 && (
+        <span className={style.message2}>Seleccione el tipo de transacción</span>
       )}
     </div>
   );

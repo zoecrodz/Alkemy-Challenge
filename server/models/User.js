@@ -34,9 +34,6 @@ User.init(
       type: S.BOOLEAN,
       defaultValue: false,
     },
-    total: {
-      type: S.FLOAT
-  }
   },
   { sequelize: db, modelName: 'user' },
 );

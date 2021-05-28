@@ -65,10 +65,12 @@
   color: white;
 }
 
-.container span {
-  text-align: center;
-  color: red;
-  background-color: tan;
+.message {
+  display: none;
+}
+.message2{
+  display: inline;
+  color:red;
 }
 
 @media (max-width: 750px) {
@@ -90,5 +92,14 @@
 
   .buttons {
     margin-bottom: 10px;
+  }
+  .message{
+    display: flex;
+    text-align: center;
+  color: red;
+  }
+
+  .message2{
+    display: none;
   }
 }
