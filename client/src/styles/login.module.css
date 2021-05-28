@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 .main{
     /* background-color: antiquewhite; */
@@ -25,13 +25,13 @@ body{
 }
 
 h1{
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Work Sans', sans-serif;
     color: white;
     font-weight: 200;
 }
 
 h2{
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: white;
     font-weight: 200;
     ;}
@@ -94,4 +94,20 @@ h2{
 .button:hover{
     background-color: white;
     color:black
+}
+
+span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+label{
+    font-family: 'Work Sans', sans-serif;
+}
+
+button{
+    font-family: 'Work Sans', sans-serif;
+}
+
+input{
+    font-family: 'Work Sans', sans-serif;
 }
