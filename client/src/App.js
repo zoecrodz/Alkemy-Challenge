@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux"
 import LoginContainer from "./containers/LoginContainer"
 import Home from "./containers/Home"
 import {getUser} from "./store/user"
+import Navbar from "./components/Navbar"
 
 const App = () => {
 
@@ -17,6 +18,8 @@ const App = () => {
     }, [])
 
     return (
+        <>
+        <Navbar />
         <div>
             {user?.id ? (
                 <Route path="/" render={() => <Home />}/>
@@ -27,6 +30,7 @@ const App = () => {
             </>
             )}
         </div>
+        </>
     );
 };
 
