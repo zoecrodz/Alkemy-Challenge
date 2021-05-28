@@ -18,7 +18,7 @@ const Home = () => {
       {user?.id && (
         <>
           <New user={user}/>
-          {/* <Historial user={user}/> */}
+          <Historial user={user}/>
         </>
       )}
     </div>
