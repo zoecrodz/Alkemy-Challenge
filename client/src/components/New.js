@@ -22,20 +22,20 @@ const New = ({ user }) => {
         info: transaction,
         userId: user.id,
       };
-      dispatch(newTransaction(data));
+      dispatch(newTransaction(data))
+      .then(() => history.go(0))
     } else if (outgoing) {
       transaction.type = "outgoing";
       data = {
         info: transaction,
         userId: user.id,
       };
-      dispatch(newTransaction(data));
+      dispatch(newTransaction(data))
+      .then(() => history.go(0))
     } else {
       setMessage(true);
     }
   };
-
-  console.log("aber", user);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -78,7 +78,7 @@ const New = ({ user }) => {
               name="detail"
               type="text"
             ></textarea>
-            <input className={style.submit} type="submit"></input>
+            <input style={{width: '80px', fontSize:'1em'}}className={style.submit} type="submit"></input>
           </form>
         </>
       )}

@@ -1,69 +1,95 @@
-.container{
-    background-color: rgb(255, 255, 255);
-    /* width: 300px;
-    height: 200px; */
-    border-radius: 15px;
-    box-shadow: -5px 5px 2px 0px rgba(255, 255, 255, 0.39);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: -5px 5px 2px 0px rgba(255, 255, 255, 0.39);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.container h1{
-    font-size: 1.5em;
+.container h1 {
+  font-size: 1.5em;
 }
 
-.buttons{
-    /* background-color: burlywood; */
-    display: flex;
-    justify-content: space-evenly;
+.buttons {
+  /* background-color: burlywood; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .buttons button {
-    height: 40px;
-    width: 80px;
-    background-color: white;
-    border: 2px solid rgba(128, 128, 128, 0.438);
+  height: 40px;
+  width: 80px;
+  background-color: white;
+  border: 2px solid rgba(128, 128, 128, 0.438);
 }
 
-.buttons button:hover{
-    border: 1px solid purple
+.buttons button:hover {
+  border: 1px solid purple;
 }
 
-
-
-.container form{
-    /* background-color: skyblue; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container form {
+  /* background-color: skyblue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  flex-wrap: wrap;
 }
 
-.container input{
-    width: 70%;
-    height: 30px;
-    font-size: 1.5em;
-    border-radius: 2px;
-    border: 0.5px solid rgba(128, 128, 128, 0.438)
+.container input {
+  width: 200px;
+  height: 40px;
+  font-size: 1.5em;
+  border-radius: 2px;
+  border: 0.5px solid rgba(128, 128, 128, 0.438);
 }
 
-.container textarea{
-    width: 70%;
-    height: 70px;
-    font-size: 1.5em;
-    border-radius: 2px;
-    border: 0.5px solid rgba(128, 128, 128, 0.438)
+.container textarea {
+  width: 300px;
+  height: 40px;
+  font-size: 1.5em;
+  border-radius: 2px;
+  border: 0.5px solid rgba(128, 128, 128, 0.438);
 }
 
-.submit{
-    margin-top: 15px;
-    border-radius: 10px;
-    background-color:black;
-    color:white
+.submit {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
 }
 
 .container span {
-    text-align: center;
-    color: red
+  text-align: center;
+  color: red;
+  background-color: tan;
+}
+
+@media (max-width: 750px) {
+  .container form {
+    justify-content: center;
+    width: 70%;
+    height: 250px;
+  }
+  .container {
+    justify-content: center;
+    position:relative
+  }
+  .container input {
+    width: 100%;
+  }
+
+  .container textarea {
+    width: 100%;
+  }
+
+  .buttons {
+    margin-bottom: 10px;
+  }
 }
