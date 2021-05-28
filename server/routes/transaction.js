@@ -15,7 +15,7 @@ router.post("/:id", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
     try {
-        const all = await Transaction.findAll({where: {
+        const all = await Transaction.findAll({order: [['createdAt', 'DESC']], where: {
             userId: req.params.id
         }})
         res.status(200).send(all)
