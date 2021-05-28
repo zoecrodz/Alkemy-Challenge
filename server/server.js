@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/api', api);
 
-sequelize.sync({ force: false}).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(3001, () => {
       console.log(`Server listening at port 3001`);
     });

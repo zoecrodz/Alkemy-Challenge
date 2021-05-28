@@ -6,7 +6,10 @@ class Entry extends S.Model {}
 Entry.init({
     amount: {
         type: S.FLOAT
-    }
+    },
+    detail: {
+        type: S.TEXT
+    },
 }, {
     sequelize: db, modelName: 'entry' 
 })

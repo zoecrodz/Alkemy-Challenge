@@ -1,0 +1,15 @@
+.container{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+
+    /* height: 500px; */
+}
+
+.container h1{
+    color: black
+}
+
