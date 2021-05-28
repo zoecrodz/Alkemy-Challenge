@@ -22,6 +22,15 @@ export const getTransactions = createAsyncThunk ("GET_TRANSACTIONS_BY_USERID", a
     }
 })
 
+export const deleteTransaction = createAsyncThunk ("DELETE_TRANSACTION", async (id) => {
+    try {
+        const deleted = await axios.delete(`http://localhost:3001/api/transaction/${id}`)
+        return deleted.data
+    } catch (err) {
+        console.log(err)
+    }
+})
+
 const initialState = { all: {} };
 
 const transactionReducer = createReducer(initialState, {

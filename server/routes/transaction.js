@@ -15,10 +15,21 @@ router.post("/:id", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
     try {
-        const all = await Transaction.findAll({order: [['createdAt', 'DESC']], where: {
+        const all = await Transaction.findAll({limit: 10, order: [['createdAt', 'DESC']], where: {
             userId: req.params.id
         }})
         res.status(200).send(all)
+    } catch (err) {
+        console.log(err)
+    }
+})
+
+router.delete("/:id", async (req, res) => {
+    try {
+        const deleted = await Transaction.destroy({where: {
+            id: req.params.id
+        }})
+        res.sendStatus(200).send(deleted)
     } catch (err) {
         console.log(err)
     }

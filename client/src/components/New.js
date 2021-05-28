@@ -6,7 +6,7 @@ import style from "../styles/new.module.css";
 
 const New = ({ user }) => {
 
-  const history = useHistory(0)
+  const history = useHistory()
   const [entry, setEntry] = useState(false);
   const [outgoing, setOutgoing] = useState(false);
   const [transaction, setTransaction] = useState({});
